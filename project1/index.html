@@ -23,24 +23,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="create_new">
-        <div class="create--btn" " onclick="create()"><button type="button" style="background-color: var(--secondary-hover)"; class="btn btn-success">Create a new List</button>
-        </div>
-        <div class="create hidden" id="create">
-          <div class="delete_all"><button type="button" onclick="reset()" class="btn btn-danger">Delete list</button>
-          </div>
       <div class="wrapper">
         <div class="to_do_list">
           <h2 class="header">To-Do List App</h2>
           <div class="add_task">
-            <div class="form" action="" method="">
+            <div class="form">
               <input
                 type="text"
                 placeholder="Write you task here"
                 id="input_text"
                 onchange="back_to_normal()"
               />
-              <button class="hover" id="btn--add">+</button>
+              <button class="" id="btn--add">+</button>
             </div>
             <div class="hidden" id="error">
               <div
@@ -71,7 +65,7 @@
           </div>
           <div class="hidden" id="error2">
             <div
-              class="alert alert-danger d-flex align-items-center alert-dismissible"
+              class="alert alert-danger d-flex align-items-center"
               role="alert"
             >
               <svg
@@ -83,13 +77,11 @@
               >
                 <use xlink:href="#exclamation-triangle-fill" />
               </svg>
-              <div>You have no tasks!!!</div><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div>You have no tasks!!!</div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
